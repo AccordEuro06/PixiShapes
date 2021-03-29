@@ -1,0 +1,55 @@
+@import url('./reset.css');
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.main {
+  width: 800px;
+  display: block;
+  margin: auto;
+
+}
+
+.inputs {
+  margin: 10px 0px 10px 0px;
+}
+
+
+canvas {
+  border: 2px solid black;
+}
+
+
+.round {
+  font-size: 32px;
+  height: 50px;
+  width: 50px;
+  background-color: rgb(190, 200, 245);
+  border-radius: 50%;
+  display: inline-block;
+  bottom: 10px;
+}
+
+.controls input[type=number] {
+  width: 50px;
+  height: 30px;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 10px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.info {
+  color: red;
+  font-weight: 600;
+}

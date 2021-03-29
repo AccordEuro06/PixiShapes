@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Falling shapes</title>
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <script src="assets/js/pixi.min.js"></script>
+
+</head>
+
+
+<body>
+
+  <div class="main">
+    <div class="inputs">
+      <label for="figureCount">Count:</label>
+
+      <input type="text" id="figureCount" name="figureCount">
+      <label for="areaTaken">Area occupied by elements:</label>
+
+      <input type="text" id="areaTaken" name="areaTaken" value=0>
+    </div>
+
+    <canvas id="pixiCanvas">
+
+    </canvas>
+    <div class="controls">
+      <button class="round" onclick="increaseElement()">+</button>
+      Number of created elements:<input id="elementNum" type="number" value="5">
+      <button class="round" onclick="decreaseElement()">-</button>
+
+
+      <button class="round" id="incGravity" onclick="increaseGravity()">+</button>
+      Elemetnts speed: <input id="gravityNum" type="number" value="1">
+      <button class="round" id="decGravity" onclick="decreaseGravity()">-</button>
+    </div>
+    <div class="instruction">
+      <h2>Instruction</h2>
+      <p><span class="info">Mouse left click on the element</span> - left click on the selected element removes it from
+        the canvas</p>
+      <p><span class="info">Mouse right click on the element</span> - right click on the selected element changes colour
+        of all the
+        elements of the same type
+      </p>
+      <p><span class="info">Mouse left click on the canvas</span> - spawn random object on the mouse X position which is
+        going to drop from the
+        top
+      </p>
+    </div>
+  </div>
+  <script defer src="assets/js/mainSettings.js"></script>
+  <script defer src="assets/js/functions.js"></script>
+
+
+</body>
+
+</html>
